@@ -1,0 +1,109 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<style>
+    
+    .container .formul {
+    display: grid;
+    margin-top: 60px;
+    text-transform: capitalize;
+    text-align: center;
+    padding: 0  24px 12px;
+    background-color: #fffbff;
+    border: 1.5px solid rgb(114 41 114);;
+    border-radius: 12px;
+    overflow-x: hidden;
+    max-width: 440px;
+    margin-left: auto;
+    margin-right: auto;
+}
+input[type='search'] {
+
+    width: calc(100% - 69px) !important;
+}
+h2{
+    padding: 12px 0;
+    /* border-bottom:1px solid #77777757 ; */
+    margin: 0 0 8px;
+    position: relative;
+    color: rgb(114 41 114);
+}
+h2::before{
+content: '';
+position: absolute;
+width:calc(100% + 48px);
+background-color: rgb(114 41 114);;
+height: 1.5px;
+left: -24px;
+bottom: 0;
+}
+.formul input:not(:last-child){
+    text-transform: capitalize;
+    height: 35px;
+    padding: 12px 6;
+    border: none none none;
+    border: none;
+    border-bottom: 1px solid;
+    margin: 8px 0;
+    outline: none;
+    border-color: rgba(114, 41, 114, 0.608);;
+}
+textarea{
+    border-color: rgba(114, 41, 114, 0.611);;
+    outline: 0;
+    padding: 12;
+    border-radius: 2px 16px;
+}
+.formul input:last-child{
+    padding: 12px 6;
+    border-color: #77777757;
+    width: fit-content;
+    display: block;
+    
+}
+</style>
+<body>
+    <header>
+        <div class="content container">
+        <button><a href="form.html">ajoute</a></button>
+        <form action="">
+            <input type="search" name="" id="search">
+            <input type="submit" value="search">
+        </form>
+        </div>
+    </header>
+    <div class="container">
+        <form class="formul" action="" >
+            <h2 for="">declarer</h2>
+            <input type="text" placeholder="name">
+            <input type="text" placeholder="position">
+            <input type="datetime" placeholder="date">
+            <textarea name="" id="" cols="30" rows="10" placeholder="decription"></textarea>
+            <input type="file">
+        </form>
+    </div>
+            <!-- start footer -->
+        <footer>
+            <div class="container">
+
+                <div class="contact">
+                    <a class="profile">
+                        <span>
+                        <img src="images/profile.png" alt="">
+                        </span>
+                    </a>
+                    <a href="">github</a>
+                    <a href="">gmail</a>
+                    <a href="manager.html">manager</a>
+
+                </div>
+
+            </div>
+        </footer>
+        <!-- end footer -->
+</body>
+</html>
